@@ -107,4 +107,6 @@ profproc()
   fi
 }
 
-default_command=profproc__error_handle
+if [ ! "$default_command" ]; then
+  default_command=profproc__error_handle
+fi
